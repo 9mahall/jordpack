@@ -1,2 +1,2 @@
 # jordpack
-This is the github repo for the jordpack minecraft pack
+Landing website for modded minecraft server
