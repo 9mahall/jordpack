@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Server Mods</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <!-- Bootstrap lniks -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #23272b 0%, #181A1B 100%);
+      color: #e0e0e0;
+      
+     
+    }
+    .navbar {
+      background-color: #032620;
+      border-bottom: 2px solid #222;
+    }
+    .navbar-brand, .nav-link, .navbar-toggler {
+      color: #258273 !important; /* accent */
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #8af1df !important; /* accent */
+    }
+    .server-url {
+      background: #805B80;
+      color: #ffffff;
+       font-family: 'VT323', monospace;
+      font-weight: bold;
+      font-size: 3rem;
+      border-radius: 10px;
+      padding: 1.2rem 2rem;
+      margin: 2rem 0 2.5rem 0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+      text-align: center;
+      letter-spacing: 1.5px;
+      border: 1px solid #444;
+    }
+    .section-title {
+      color: #bd93f9;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px #181A1B;
+    }
+    .screenshot-gallery img {
+      border: 3px solid #23272b;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 18px rgba(34,34,34,0.6);
+      background: #181A1B;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .screenshot-gallery img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 32px #50fa7b55;
+      border-color: #50fa7b;
+    }
+    .footer {
+      color: #444;
+      text-align: center;
+      margin-top: 3rem;
+      padding-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .list {
+      background: #805B80;
+      color: #ffffff;
+       font-family: 'VT323', monospace;
+      font-weight: bold;
+      font-size: 1.6rem;
+      border-radius: 10px;
+      padding: 1.2rem 2rem;
+      margin: 2rem 0 2.5rem 0;
+      box-shadow: 0 4px 16px rgba(244, 0, 0, 0.45);
+      text-align: center;
+      list-style-position: inside;
+      letter-spacing: 1.5px;
+      border: 1px solid #444;
+    }
+    .gallery {
+  display: flex;
+  gap: 20px; /* space between images */
+  flex-wrap: wrap;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  text-align: center;
+  pointer-events: none; /* allows clicks to pass through */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="https://jord.lolhall.com">Jord Pack</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="mods.html">Mods</a></li>
+          <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="join.html">How to join</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+
+
+    <!-- OLD Gallery Section 
+    <h2 class="section-title">Featured Mods</h2>
+    <div class="row screenshot-gallery">
+
+      <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+        <img src="https://placehold.co/400x250/23272b/50fa7b?text=Screenshot+1" alt="Screenshot 1" class="img-fluid">
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+        <img src="https://placehold.co/400x250/181A1B/bd93f9?text=Screenshot+2" alt="Screenshot 2" class="img-fluid">
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+        <img src="https://placehold.co/400x250/44475a/50fa7b?text=Screenshot+3" alt="Screenshot 3" class="img-fluid">
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+        <img src="https://placehold.co/400x250/282a36/bd93f9?text=Screenshot+4" alt="Screenshot 4" class="img-fluid">
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+        <img src="https://placehold.co/400x250/23272b/50fa7b?text=Screenshot+5" alt="Screenshot 5" class="img-fluid">
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+        <img src="https://placehold.co/400x250/181A1B/bd93f9?text=Screenshot+6" alt="Screenshot 6" class="img-fluid">
+      </div> -->
+
+<!-- Gallery Section -->
+<h2 class="section-title">Featured Mods</h2>
+<div class="row screenshot-gallery">
+
+  <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+    <div class="image-container">
+      <img src="/assets/1.png" alt="Screenshot 1" class="img-fluid">
+      <div class="centered-text">Mod Title 1</div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+    <div class="image-container">
+     <img src="/assets/1.png" alt="Screenshot 1" class="img-fluid">
+      <div class="centered-text">Mod Title 2</div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+    <div class="image-container">
+     <img src="/assets/1.png" alt="Screenshot 1" class="img-fluid">
+      <div class="centered-text">Mod Title 3</div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+    <div class="image-container">
+     <img src="/assets/1.png" alt="Screenshot 1" class="img-fluid">
+      <div class="centered-text">Mod Title 4</div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+    <div class="image-container">
+     <img src="/assets/1.png" alt="Screenshot 1" class="img-fluid">
+      <div class="centered-text">Mod Title 5</div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+    <div class="image-container">
+     <img src="/assets/1.png" alt="Screenshot 1" class="img-fluid">
+      <div class="centered-text">Mod Title 6</div>
+    </div>
+  </div>
+
+      </div>
+
+  </div>
+
+<div class="container"> <ul class="list"> <li>AE2 Things</li> <li>AE2 Wireless Terminal Library (ae2wtlib)</li> 
+  <li>Actually Harvest</li> <li>Ad Astra</li> <li>Almost Unified</li> <li>Applied Energistics 2</li> <li>Applied Flux</li> 
+  <li>Applied Mekanistics</li> <li>Architectury</li> <li>Ars Additions</li> <li>Ars Creo</li> <li>Ars Elemental</li>
+  <li>Ars Nouveau</li> <li>Bag of Yurting</li> <li>Ballistix</li> <li>Balm</li> <li>Botarium</li> <li>Brandon's Core</li> 
+  <li>Building Gadgets 2</li> <li>CB Multipart</li> <li>CC: Tweaked</li> <li>CCBX</li> <li>CCC Bridge</li> <li>Cable Facades</li>
+  <li>Cardboard Boxes</li> <li>Chalk</li> <li>Charging Gadgets</li> <li>Chisels & Bits</li> <li>Clockwork</li> <li>Cloth Config</li>
+  <li>CoFH Core</li> <li>CodeChickenLib</li> <li>Common Networking</li> <li>CommonCapabilities</li> <li>Compact Machines</li> 
+  <li>Configured</li> <li>Create</li> <li>Create Ad Astra Compat</li> <li>Create Ad Astra Recipes</li> <li>Create Addition</li>
+  <li>Create Big Cannons</li> <li>Create Central Kitchen</li> <li>Create Chunkloading</li> <li>Create Deco</li>
+  <li>Create Diesel Generators</li> <li>Create Nuclear</li> <li>Create Radar</li> <li>Create Ultimate Factory</li> 
+  <li>Cucumber Library</li> <li>Cupboard</li> <li>Curios</li> <li>Cyclic</li> <li>Cyclops Core</li> <li>Design Decor</li>
+  <li>Draconic Evolution</li> <li>Electrodynamics</li> <li>Elevatorid</li> <li>Embeddium</li> <li>Ender IO</li> <li>Eureka</li> 
+  <li>Extended Gears</li> <li>Extreme Reactors 2</li> <li>FLib</li> <li>Farmer's Delight</li> <li>FerriteCore</li> <li>Forge Config API Port</li>
+  <li>GPU Mem Leak Fix</li> <li>GeckoLib</li> <li>Glodium</li> <li>Gravestone Curios Compat</li> <li>Gravestone Mod</li> <li>Immersive Aircraft</li>
+  <li>Immersive Engineering</li> <li>Inventory Sorter</li> <li>Iron Chests</li> <li>Iron Furnaces</li> <li>Iron Jetpacks</li> 
+  <li>Just Enough Items (JEI)</li> <li>Kotlin For Forge</li> <li>Lithosphere</li> <li>Mantle</li> <li>McJtyLib</li>
+ <li>Mekanism</li> <li>Mekanism Generators</li> <li>Mekanism Tools</li> <li>Mining Gadgets</li> <li>Mob Grinding Utils</li> 
+ <li>ModernFix</li> <li>Modonomicon</li> <li>Modular Force Field System (MFFS)</li> <li>Oculus</li> <li>Pam's HarvestCraft 2 Crops</li> 
+ <li>Pam's HarvestCraft 2 Food Core</li> <li>Pam's HarvestCraft 2 Food Extended</li> <li>Pam's HarvestCraft 2 Trees</li> <li>Patchouli</li> 
+ <li>Physics Mod Pro</li> <li>Pipez</li> <li>Pocket Storage</li> <li>Point Blank</li> <li>Project Red Core</li> <li>Project Red Expansion</li>
+  <li>Project Red Exploration</li> <li>Project Red Illumination</li> <li>Project Red Transmission</li> <li>Psychadelic Chemistry</li>
+   <li>RFTools Base</li> <li>RFTools Power</li> <li>Ranged Pumps</li> <li>Resourceful Config</li> <li>Resourceful Lib</li> <li>ServerCore</li>
+    <li>Slice And Dice</li> <li>Small Ships</li> <li>Smooth Chunk</li> <li>Sol Carrot</li> <li>Sophisticated Backpacks</li> <li>Sophisticated Core</li>
+     <li>Steam Rails</li> <li>SuperMartijn642 Config Lib</li> <li>SuperMartijn642 Core Lib</li> <li>TerraBlender</li> <li>Tesseract (Fabric)</li> 
+     <li>Tesseract (Forge)</li> <li>The Final Machine Gun (TFMG)</li> <li>The One Probe</li> <li>Thermal Dynamics</li> <li>Thermal Expansion</li> 
+     <li>Thermal Foundation</li> <li>Tinkers' Construct</li> <li>Torchmaster</li> <li>Valkyrien Skies</li> <li>Waystones</li> <li>Wired Redstone</li> 
+     <li>Xaero's Minimap</li> <li>Xaero's Waystones Compatibility</li> <li>ZeroCore2</li> </ul> </div>
+
+  <div class="footer">
+    &copy; 2025 lolhall all rights reserved
+  </div>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
