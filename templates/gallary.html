@@ -38,6 +38,14 @@
     <!-- Gallery Section -->
     <h2 class="section-title">Screenshots</h2>
     <div class="row screenshot-gallery">
+
+      {% for img in images %}
+        <div class="col-md-4 col-sm-6 mb-4 enlargeable">
+        <img src="{{ img }}" alt="Screenshot" class="img-fluid">
+        </div>
+      {% endfor %}
+        <!--
+      }
       <div class="col-md-4 col-sm-6 mb-4 enlargeable">
         <img src="https://placehold.co/400x250/23272b/50fa7b?text=Screenshot+1" alt="Screenshot 1" class="img-fluid">
       </div>
@@ -55,7 +63,7 @@
       </div>
       <div class="col-md-4 col-sm-6 mb-4 enlargeable">
         <img src="https://placehold.co/400x250/181A1B/bd93f9?text=Screenshot+6" alt="Screenshot 6" class="img-fluid">
-      </div>
+      </div>  -->
     </div>
 
   </div>
